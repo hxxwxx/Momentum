@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <div class="box1">
+                <div id="TodoBox_space"></div>
+            </div>
+            <div class="box2">
+                <div id="todo_tag">
+                    <span class="material-symbols-outlined double_arrow">
+                        double_arrow
+                        </span>
+                    <span id="todo_sign">Todo</span>
+                </div>
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="clock_box">
+                <h2 id="clock"></h2>
+            </div>
+            <div class="login_box">
+                <form id="Login-input" class="hidden">
+                    <input
+                        required
+                        type="text"
+                        maxlength="15" 
+                        placeholder="What's your name?"/> 
+                        <!-- max가 아니라 maxlength였구나. -->
+                    <button>Login</button>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div id="todo" class="hidden">
+        <span class="material-symbols-outlined more_horiz">more_horiz</span>
+        <div class="change">
+            <div class="font_color hidden">
+                <label for="color-picker1">font Color:</label>
+                <input type="color" class="picker" value="#000000" id="color-picker1" />
+            </div>
+            <div class="background_color hidden">
+                <label for="color-picker2">background Color:</label>
+                <input type="color" class="picker" value="#ffffff" id="color-picker2" />
+            </div>
+        </div>
+        <form id="input-form">
+            <input 
+                type ="text" 
+                placeholder="Write your to do and press enter key"
+                required
+            />
+        </form> 
+        <ul id="to-do-list"></ul>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+<script src="./js/clock.js"></script>
+<script src="./js/quotes.js"></script>
+<script src="./js/background.js"></script>
+<script src="./js/todoList.js"></script>
+<script src="./js/weather.js"></script>
+</html>
